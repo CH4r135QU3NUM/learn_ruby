@@ -6,7 +6,7 @@ def shout(string)
   string.upcase
 end
 
-def repeat(string)
-	string + " " + string
+def repeat(string, i=2)
+  string + (" #{string}" * (i-1))   
 end
 
