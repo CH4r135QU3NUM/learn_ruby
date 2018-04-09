@@ -19,9 +19,13 @@ string.split.first
 end
 
 def titleize(string)
-  string = string.split(" ").each {|word| word.capitalize!}
+  words_to_ignore = ["the", "of", "and", "or", "but", "in", "on", "over"]
+  string = string.split(" ").each {|word| word.capitalize! unless words_to_ignore.include? word }
   string = string.join(" ")
-  return string
 end
+
+#on a pas réussi à capitaliser quand même le premier mot malgré que ce soit un "petit", si quelqu'un à la soluce ca serait avec plaisir!
+
+
 
 
