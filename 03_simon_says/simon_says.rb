@@ -1,8 +1,12 @@
-#write your code here
-def echo(hello, bye)
-  	if hello then puts "hello"
-  	elsif bye then puts "bye"
-	end
+def echo(string)
+  string
 end
 
+def shout(string)
+  string.upcase
+end
+
+def repeat(string)
+	string + " " + string
+end
 
