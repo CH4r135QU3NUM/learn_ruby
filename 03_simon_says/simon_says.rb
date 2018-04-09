@@ -19,5 +19,9 @@ string.split.first
 end
 
 def titleize(string)
-  string.capitalize
+  string = string.split(" ").each {|word| word.capitalize!}
+  string = string.join(" ")
+  return string
 end
+
+
